@@ -14,7 +14,22 @@ import { HomeComponent } from './home/home.component';
 import {RouterModule, Routes} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+
+const appRoutes: Routes = [
+  {path: 'nouscontacter' , component: NouscontacterComponent},
+  {path: 'apropos' , component: AproposComponent},
+  /* {path: 'listeannonces' , component: ListeannoncesComponent, children: [
+       {path: 'afficherpetitannonce' , component: AfficherpetitannonceComponent},
+     ]},*/
+  {path: 'home', component: HomeComponent},
+  {path: 'errorpage' , component: ErrorpageComponent},
+  {path: '' , redirectTo: 'home', pathMatch: 'full'},
+  {path: '**', redirectTo: 'errorpage'}
+];
+
+/*export function createTranslateLoader(http: Http) {
+  return new TranslateStaticLoader(http, './assets/i18n', '.json');
+}*/
 
 @NgModule({
   declarations: [
