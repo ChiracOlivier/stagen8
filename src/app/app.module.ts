@@ -33,7 +33,13 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    NouscontacterComponent,
+    AproposComponent,
+    ErrorpageComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
