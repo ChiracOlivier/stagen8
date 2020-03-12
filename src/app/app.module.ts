@@ -43,7 +43,19 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule,
+    BrowserModule,
+    // AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
+    ReactiveFormsModule,
+    HttpClientModule,
+    //  HttpModule,
+    /*  TranslateModule.forRoot({
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [Http]
+      }),*/
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
