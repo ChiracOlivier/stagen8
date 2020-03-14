@@ -24,7 +24,7 @@ const appRoutes: Routes = [
   {path: 'diversesinfos' , component: DiversesinfosComponent},
   {path: 'produitsalimentaires' , component: ProduitsalimentairesComponent},
   {path: 'produitscosmetiques' , component: ProduitscosmetiquesComponent},
-  {path: 'produitsalimentaires' , component: ServicestraiteursComponent},
+  {path: 'servicestraiteurs' , component: ServicestraiteursComponent},
   {path: 'apropos' , component: AproposComponent},
   /* {path: 'listeannonces' , component: ListeannoncesComponent, children: [
        {path: 'afficherpetitannonce' , component: AfficherpetitannonceComponent},
