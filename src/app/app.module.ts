@@ -14,9 +14,17 @@ import { HomeComponent } from './home/home.component';
 import {RouterModule, Routes} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { DiversesinfosComponent } from './diversesinfos/diversesinfos.component';
+import { ProduitsalimentairesComponent } from './produitsalimentaires/produitsalimentaires.component';
+import { ProduitscosmetiquesComponent } from './produitscosmetiques/produitscosmetiques.component';
+import { ServicestraiteursComponent } from './servicestraiteurs/servicestraiteurs.component';
 
 const appRoutes: Routes = [
   {path: 'nouscontacter' , component: NouscontacterComponent},
+  {path: 'diversesinfos' , component: DiversesinfosComponent},
+  {path: 'produitsalimentaires' , component: ProduitsalimentairesComponent},
+  {path: 'produitscosmetiques' , component: ProduitscosmetiquesComponent},
+  {path: 'produitsalimentaires' , component: ServicestraiteursComponent},
   {path: 'apropos' , component: AproposComponent},
   /* {path: 'listeannonces' , component: ListeannoncesComponent, children: [
        {path: 'afficherpetitannonce' , component: AfficherpetitannonceComponent},
@@ -39,7 +47,11 @@ const appRoutes: Routes = [
     NouscontacterComponent,
     AproposComponent,
     ErrorpageComponent,
-    HomeComponent
+    HomeComponent,
+    DiversesinfosComponent,
+    ProduitsalimentairesComponent,
+    ProduitscosmetiquesComponent,
+    ServicestraiteursComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,36 @@
+.ain-page-header {
+  background-color: lightskyblue;
+  text-align: center;
+  min-height: 140px;
+  padding: 45px;
+}
+.ain-body {
+  min-height: 700px;
+  padding-top: 70px;
+}
+h2 {
+  text-align: center;
+  padding-top: 15px;
+}
+button {
+  color: white; //#fff !important;
+  //text-decoration: none;
+  margin-top: 20px;
+  background: green;// #ed3330;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  letter-spacing: 2px;
+  // transition: all 0.4s ease 0s;
+  max-height: 40px;
+  text-align: center;
+  width: 210px;
+}
+button:hover {
+  background: lightgrey; // #434343;
+  letter-spacing: 5px;
+  color: black;
+  width: 250px;
+}
