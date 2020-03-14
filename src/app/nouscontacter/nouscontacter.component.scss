@@ -3,10 +3,7 @@
   min-height: 800px;
   padding-top: 70px;
 }
-h2 {
-  text-align: center;
-  padding-top: 15px;
-}
+
 button {
   color: white; //#fff !important;
   //text-decoration: none;
@@ -18,7 +15,7 @@ button {
   display: inline-block;
   border: none;
   letter-spacing: 2px;
-  // transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
   max-height: 40px;
   text-align: center;
   width: 210px;
@@ -47,4 +44,207 @@ input[type=text], input[type=email], select, textarea {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  max-width: 800px;
+  position:relative;
+  left: 20%;
+  right: 20%;
 }
+.containe {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  max-height: 60px;
+  max-width: 500px;
+  position:relative;
+  left: 35%;
+  right: 35%;
+}
+.ain-page-header {
+  background-color: #cbcbcb;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 60px;
+}
+@media only screen and (max-width: 600px) {
+  .containe {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-height: 60px;
+    max-width: 200px;
+    position:relative;
+    left: 10%;
+    right: 10%;
+  }
+  .ain-page-header {
+    background-color: #cbcbcb;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 60px;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 200px;
+    position:relative;
+    left: 10%;
+    right: 10%;
+  }
+  }
+@media only screen and (min-width: 600px) {
+  .containe {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-height: 60px;
+    max-width: 300px;
+    position:relative;
+    left: 18%;
+    right: 18%;
+  }
+  .ain-page-header {
+    background-color: #cbcbcb;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 60px;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 300px;
+    position:relative;
+    left: 18%;
+    right: 18%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .containe {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-height: 60px;
+    max-width: 500px;
+    position:relative;
+    left: 22%;
+    right: 22%;
+  }
+  .ain-page-header {
+    background-color: #cbcbcb;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 60px;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 500px;
+    position:relative;
+    left: 22%;
+    right: 22%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .containe {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-height: 60px;
+    max-width: 700px;
+    position:relative;
+    left: 30%;
+    right: 30%;
+  }
+  .ain-page-header {
+    background-color: #cbcbcb;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 60px;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 700px;
+    position:relative;
+    left: 30%;
+    right: 30%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .containe {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-height: 60px;
+    max-width: 800px;
+    position:relative;
+    left: 30%;
+    right: 30%;
+  }
+  .ain-page-header {
+    background-color: #cbcbcb;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 60px;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 800px;
+    position:relative;
+    left: 30%;
+    right: 30%;
+  }
+}/*
+@media only screen and (min-width: 1200px) {
+  .containe {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-height: 60px;
+    max-width: 700px;
+    position:relative;
+    left: 20%;
+    right: 20%;
+  }
+  .ain-page-header {
+    background-color: #cbcbcb;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 60px;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 700px;
+    position:relative;
+    left: 30%;
+    right: 30%;
+  }
+}*/
