@@ -7,21 +7,21 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <div class="form-group">
-            <label for="form_name"><span class="editableLabel" labelid="global:name">Nom:  </span></label><br>
-            <input class="form-control required" name="name" value="" type="text" id="form_name" />					</div>
+            <label for="form_name">Nom Complet: </label><br>
+            <input class="form-control " formControlName="name" value="" type="text" id="form_name" />					</div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <div class="form-group">
-            <label for="form_email"><span class="editableLabel" labelid="global:email">Email:  </span></label><br>
-            <input class="form-control required" placeholder="Email" type="email" name="email" value="" id="form_email" />					</div>
+            <label for="form_email">Email:  </label><br>
+            <input class="form-control" placeholder="Votre émail" type="email" formControlName="email" value="" id="form_email" />					</div>
         </div>
       </div>
       <div class="form-group">
-        <label for="form_subject"><span class="editableLabel" labelid="messages:subject">Sujet:  </span></label><br>
-        <input class="form-control required" name="subject" value="" type="text" id="form_subject" />			</div>
+        <label for="form_subject">Sujet:  </label><br>
+        <input class="form-control" formControlName="subject" value="" type="text" id="form_subject" />			</div>
       <div class="form-group">
-        <label for="form_message"><span class="editableLabel" labelid="message:message">Message:  </span></label>
-        <textarea class="form-control required" rows="8" name="message" id="form_message"></textarea>			</div>
+        <label for="form_message">Message:  </label>
+        <textarea class="form-control" rows="8" formControlName="message" id="form_message"></textarea>			</div>
       <!-- <div class="form-group">
          <div class="alert alert-danger alert-dismissible is-robot hidden" role="alert">
            <strong><span class="editableLabel" labelid="global:verify_not_robot">Veuillez vérifier que vous n'êtes pas un robot.</span></strong>
@@ -33,7 +33,8 @@
       <div class="form-group">
         <button type="submit" [disabled]="signUpForm.invalid">Envoyer le message</button>
       </div>
-    </form>	</div>
+    </form>
+  </div>
 </div>
 
 

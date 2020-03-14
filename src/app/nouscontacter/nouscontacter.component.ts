@@ -20,13 +20,17 @@ export class NouscontacterComponent implements OnInit {
   InitForm() {
 
     this.signUpForm = this.formBuilder.group({
-      politiConfidEtCondUsage: ['', [ Validators.required]],
+      name: ['', [ Validators.required]],
+      email: ['', [ Validators.required]],
+      subject: [''],
+      message: ['', [ Validators.required]],
     });
   }
   onSubmit() {
+    const name = this.signUpForm.get('name').value;
     const email = this.signUpForm.get('email').value;
-    const password = this.signUpForm.get('password').value;
-    const politiConfidEtCondUsage = this.signUpForm.get('politiConfidEtCondUsage').value;
+    const subject = this.signUpForm.get('subject').value;
+    const message = this.signUpForm.get('message').value;
   }
   resolved(captchaResponse: string) {
     console.log(`Resolved captcha with response: ${captchaResponse}`);
