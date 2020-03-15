@@ -17,5 +17,6 @@ export class ServicestraiteursComponent implements OnInit {
   }
 
   voirRecette() {
+    this.router.navigate(['nouscontacter']);
   }
 }
