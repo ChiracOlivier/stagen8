@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit, ViewContainerRef} from '@angular/core';
+import {Router} from '@angular/router';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-servicestraiteurs',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicestraiteursComponent implements OnInit {
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder,
+              private vcr: ViewContainerRef,
+              private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  voirRecette() {
+  }
 }

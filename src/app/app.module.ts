@@ -18,6 +18,7 @@ import { DiversesinfosComponent } from './diversesinfos/diversesinfos.component'
 import { ProduitsalimentairesComponent } from './produitsalimentaires/produitsalimentaires.component';
 import { ProduitscosmetiquesComponent } from './produitscosmetiques/produitscosmetiques.component';
 import { ServicestraiteursComponent } from './servicestraiteurs/servicestraiteurs.component';
+import {CarouselModule} from 'ngx-bootstrap';
 
 const appRoutes: Routes = [
   {path: 'nouscontacter' , component: NouscontacterComponent},
@@ -67,7 +68,9 @@ const appRoutes: Routes = [
         useFactory: (createTranslateLoader),
         deps: [Http]
       }),*/
-    FormsModule
+    FormsModule,
+    CarouselModule,
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
