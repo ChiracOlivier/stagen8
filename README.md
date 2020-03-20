@@ -15,7 +15,9 @@ cd dist
 firebase init
 Y
 choose hosting
-
+dist/stagen2
+y
+N
 firebase deploy
 
 ## Code scaffolding
