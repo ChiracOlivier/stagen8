@@ -11,6 +11,8 @@ delete dist
 ng build --env=prod or ng build --target=production --environment=prod or ng build --prod
 npm install -g firebase-tools (if not yet installed)
 firebase login  (if not yet logged)
+cd dist
+firebase init
 Y
 choose hosting
 dist/stagen2
