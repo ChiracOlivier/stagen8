@@ -14,8 +14,7 @@ firebase login  (if not yet logged)
 cd dist
 firebase init
 Y
-choose hosting
-dist/stagen2
+st/stagen2
 y
 N
 firebase deploy
