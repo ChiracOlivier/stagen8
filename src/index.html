@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Stagen8</title>
+  <title>Le Bantoum Exotique</title>
   <base href="/">
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-  <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+  <script src="https://js.api.here.com/v3/3.1.14.0/mapsjs-core.js"
           type="text/javascript" charset="utf-8"></script>
-  <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+  <script src="https://js.api.here.com/v3/3.1.14.0/mapsjs-service.js"
           type="text/javascript" charset="utf-8"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://js.api.here.com/v3/3.1.14.0/mapsjs-mapevents.js"
+          type="text/javascript" charset="utf-8"></script>
+  <link rel="icon" type="image/x-icon" href="./assets/img/faviconn.ico">
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
@@ -21,6 +22,24 @@
 <body>
   <app-root></app-root>
   <script>
+    // Initialize the platform object:
+    var platform = new H.service.Platform({
+      'apikey': 'HQd2mlk7WbsvShlM8qpMDs6ZYj61by3IlHEOVWHVLlU'
+    });
+
+    // Obtain the default map types from the platform object
+    var maptypes = platform.createDefaultLayers();
+
+    // Instantiate (and display) a map object:
+    var map = new H.Map(
+      document.getElementById('mapContainer'),
+      maptypes.vector.normal.map,
+      {
+        zoom: 10,
+        center: { lng: 13.4, lat: 52.51 }
+      });
+  </script>
+  <!--<script>
     // Initialize the platform object:
     var platform = new H.service.Platform({
       'apikey': 'HQd2mlk7WbsvShlM8qpMDs6ZYj61by3IlHEOVWHVLlU'
@@ -53,7 +72,8 @@
 
     // Add info bubble to the UI:
     ui.addBubble(bubble);
-  </script>
+  </script>-->
+
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="/__/firebase/7.11.0/firebase-app.js"></script>
 
