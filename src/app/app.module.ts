@@ -20,7 +20,6 @@ import {CarouselModule} from 'ngx-bootstrap';
 import {AngularFirestore, AngularFirestoreModule} from "@angular/fire/firestore";
 import {environment} from "../environments/environment.prod";
 import {AngularFireModule} from "@angular/fire";
-import {AngularFireAuth} from "@angular/fire/auth";
 
 const appRoutes: Routes = [
   {path: 'nouscontacter' , component: NouscontacterComponent},
@@ -75,7 +74,7 @@ const appRoutes: Routes = [
     CarouselModule,
     CarouselModule.forRoot()
   ],
-  providers: [AngularFirestore, AngularFireAuth],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

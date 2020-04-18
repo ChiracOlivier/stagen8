@@ -48,9 +48,10 @@ export class NouscontacterComponent implements OnInit {
     this.value1.text = `<p>Nom: ${name}<br><br>Email: ${email}<br><br>Message: ${message}</p>`;
     this.value1.html = `<p>Nom: ${name}<br><br>Email: ${email}<br><br>Message: ${message}</p>`;
     this.submitting = true;
+    console.log(this.value1);
     this.submissionForm.add(this.value1).then(res => {
       this.submitted = true;
-    }).catch(err => {console.log('voici lerreur'); console.log(err);}
+    }).catch(err => {console.log('voici lerreur:'); console.log(err);}
     ).finally(() => {
       this.submitting = false;
     });
