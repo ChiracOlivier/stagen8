@@ -1,24 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {Http, HttpModule} from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
-// import { AppRoutingModule } from './app-routing.module';
+ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NouscontacterComponent } from './nouscontacter/nouscontacter.component';
 import { AproposComponent } from './apropos/apropos.component';
-// import {Http, HttpModule} from '@angular/http';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { HomeComponent } from './home/home.component';
 import {RouterModule, Routes} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
 import { DiversesinfosComponent } from './diversesinfos/diversesinfos.component';
 import { ProduitsalimentairesComponent } from './produitsalimentaires/produitsalimentaires.component';
 import { ProduitscosmetiquesComponent } from './produitscosmetiques/produitscosmetiques.component';
 import { ServicestraiteursComponent } from './servicestraiteurs/servicestraiteurs.component';
 import {CarouselModule} from 'ngx-bootstrap';
+import {AngularFirestore, AngularFirestoreModule} from "@angular/fire/firestore";
+import {environment} from "../environments/environment.prod";
+import {AngularFireModule} from "@angular/fire";
+import {AngularFireAuth} from "@angular/fire/auth";
 
 const appRoutes: Routes = [
   {path: 'nouscontacter' , component: NouscontacterComponent},
@@ -58,11 +60,12 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule,
     BrowserModule,
-    // AppRoutingModule,
+    AppRoutingModule,
     RouterModule.forRoot(appRoutes),
     ReactiveFormsModule,
     HttpClientModule,
-    //  HttpModule,
+    AngularFireModule.initializeApp(environment),
+    AngularFirestoreModule.enablePersistence(),
     /*  TranslateModule.forRoot({
         provide: TranslateLoader,
         useFactory: (createTranslateLoader),
@@ -72,7 +75,7 @@ const appRoutes: Routes = [
     CarouselModule,
     CarouselModule.forRoot()
   ],
-  providers: [],
+  providers: [AngularFirestore, AngularFireAuth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

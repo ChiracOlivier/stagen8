@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as firebase from "firebase";
 // import * as firebase from 'firebase';
 // import {TranslateService} from 'ng2-translate';
 
@@ -9,6 +10,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'stagen8';
+
   constructor() { // translate: TranslateService) {
     /* translate.addLangs(['en', 'fr']);
 
@@ -19,16 +21,18 @@ export class AppComponent {
      const browserLang = translate.getBrowserLang();
      translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');*/
 
-    const firebaseConfig = {
-      apiKey: 'AIzaSyBqIBGZr9N0iTIQihIXWqEzu0EmGAyZ-9Y',
-      authDomain: 'flore1-380dc.firebaseapp.com',
-      databaseURL: 'https://flore1-380dc.firebaseio.com',
-      projectId: 'flore1-380dc',
-      storageBucket: 'flore1-380dc.appspot.com',
-      messagingSenderId: '379605375077',
-      appId: '1:379605375077:web:e68e1be4856b8e862c8e8c',
-      measurementId: 'G-85QHX8FZPE'
+    var firebaseConfig = {
+      apiKey: "AIzaSyA_Qo4uWIpViEa6uuS-8u12AMagx881JQA",
+      authDomain: "stagen8.firebaseapp.com",
+      databaseURL: "https://stagen8.firebaseio.com",
+      projectId: "stagen8",
+      storageBucket: "stagen8.appspot.com",
+      messagingSenderId: "868279122776",
+      appId: "1:868279122776:web:8e8549b50098a988e1432d",
+      measurementId: "G-EZJTDMR7B6"
     };
-    //  firebase.initializeApp(firebaseConfig);
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
   }
 }
