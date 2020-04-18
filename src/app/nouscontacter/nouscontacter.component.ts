@@ -17,7 +17,7 @@ export class NouscontacterComponent implements OnInit {
   errorMessage: string;
   value1: Value1 = {
     email1: 'bantoumeric@gmail.com',
-    email2: 'bantoumexotique@hotmail.fr',
+    email2: 'chiracolivier28@gmail.com', // 'bantoumexotique@hotmail.fr',
     subject: '',
     text: '<p>   Bonjour </P> ',
     html: '<p>   Bonjour  </P> '
@@ -50,7 +50,7 @@ export class NouscontacterComponent implements OnInit {
     this.submitting = true;
     this.submissionForm.add(this.value1).then(res => {
       this.submitted = true;
-    }).catch(err => console.log(err)
+    }).catch(err => {console.log('voici lerreur'); console.log(err);}
     ).finally(() => {
       this.submitting = false;
     });
