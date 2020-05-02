@@ -54,7 +54,7 @@ const appRoutes: Routes = [
     ProduitsalimentairesComponent,
     ProduitscosmetiquesComponent,
     ServicestraiteursComponent
-  ],
+  ],a
   imports: [
     BrowserModule,
     RouterModule,
